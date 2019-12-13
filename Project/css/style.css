@@ -1,0 +1,9 @@
+#footer-icon{
+  overflow: hidden;
+}
+
+#footer-icon a{
+  width: 20%;
+  display: inline-block;
+
+}

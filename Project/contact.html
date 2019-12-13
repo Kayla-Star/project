@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <script>
+      
+      function init_map(){
+        var var_location = new google.maps.LatLng(12.958008,77.744005);
+
+        var var_mapoptions = {
+          center: new google.maps.LatLng(12.958008,77.744005),
+          zoom: 16
+        };
+
+        var var_map = new google.maps.Map(document.getElementById("map-container"), var_mapoptions);
+
+        var var_marker = new google.maps.Marker({
+          position: var_location,
+          map: var_map,
+          title: "Edureka"
+        });
+
+        var_map.setMarker(var_marker);
+
+      } 2687
+
+      google.maps.events.addDomListener(window, 'Load', init_map)
+
+    </script>
+    
+    <!--NAVIGATION-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href="index.html" class="navbar-brand">edureka!</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <div class="navbar-nav">
+          <a class="nav-link" href="story.html">Our Story </a>
+          <a class="nav-link" href="courses.html">Courses</a>
+          <a class="nav-link" href="signup.html">Signup</a>
+          <a class="nav-link" href="faqs.html">FAQ's</a>
+          <a class="nav-link active" href="contact.html">Contacts</a>  
+        </div>
+      </div>
+    </nav>
+    <!--END OF NAVIGATION-->
+
+    <br><br><br>
+
+    <!--MAP-->
+
+    <div class="container">
+      <div class="row">
+        <div id="map-container" style="width:1100px;height:300px;"></div>
+      </div>
+    </div>
+
+    <!--END OF MAP-->
+
+    <br><br><br>
+
+    <!--FORM-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <h2>Contact Form</h2>
+          <hr/>
+
+          <form action="">
+
+
+            <div class="form-group row">
+              <label for="" class="col-form-label col-sm-2">Name</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Enter name...">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="" class="col-form-label col-sm-2">Email</label>
+              <div class="col-sm-4">
+                <input type="email" class="form-control" placeholder="Enter email...">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="" class="col-form-label col-sm-2">Message</label>
+              <div class="col-sm-4">
+                <textarea type="text" class="form-control" placeholder="Enter a message..." rows="4"></textarea>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="" class="col-form-label col-sm-2">Postion</label>
+              <div class="form-check-inline form-check">
+                <input class="form-check-input" type="checkbox">
+								<label class="form-check-label">Web Developer</label>
+              </div>
+
+              <div class="form-check-inline form-check">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label">Data Scientist</label>
+              </div>
+
+              <div class="form-check-inline form-check">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label">Beginner</label>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="" class="col-sm-2 col-form-label">Preference</label>
+              <div class="form-check-inline form-check">
+                <input class="form-check-input" type="radio">
+                <label class="form-check-label" >Tea</label>
+              </div>
+
+              <div class="form-check-inline form-check">
+                <input class="form-check-input" type="radio">
+                <label class="form-check-label" >Coffee</label>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="" class="col-sm-2 col-form-label">How did you find us?</label>
+              <div class="col-sm-6">
+                <select class="form-control">
+                <option>Facebook</option> 
+                <option>Google Search Results</option> 
+                <option>Friend</option> 
+                <option>News</option> 
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <button class="btn btn-primary">Submit</button>
+              <button class="btn btn-light">Reset</button>
+            </div>
+
+
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+    <!--END OF FORM-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=initMap"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+  </body>
+
+</html>
